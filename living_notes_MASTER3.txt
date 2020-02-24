@@ -1,0 +1,8 @@
+Capstone Project
+
+-standup lambda terraform
+--set up helper files
+--fix getting right credentials
+--plug terraform into github actions
+
+

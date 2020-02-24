@@ -1,0 +1,15 @@
+git branch -a %Lists all branches
+
+
+
+You should never edit an installed package. Instead, install a forked version of package.
+
+If you need to edit the code frequently, DO NOT install the package via pip install something and edit the code in '.../site_packages/...'
+
+Instead, put the source code under a development directory, and install it with
+
+python setup.py develop
+# or
+pip install -e path/to/SomePackage
+# Or use a vcs at the first place
+$ pip install -e git+https://github.com/lakshmivyas/hyde.git#egg=hyde
