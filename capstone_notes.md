@@ -1,3 +1,10 @@
+-ended on:
+--putitng aws secret keys into github secrets
+-up next:
+--write POC lamdba source code
+--do manual deploy of lambda terraform
+--do a github actions deployment of lambda
+
 TODO:
 1. standup lambda terraform: https://www.terraform.io/docs/providers/aws/r/lambda_function.html
 	-lambda must be put into a package
