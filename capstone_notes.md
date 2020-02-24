@@ -7,6 +7,11 @@ TODO:
 	-do a manual deployment to help see the process
 	-figure out github actions
 
+3. setup aws keys in github secrets
+	-https://github.com/aws-actions/configure-aws-credentials -aws github action
+	-https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html -manage keys
+	--IAM
+
 encrypting github actions:
 	https://developer.github.com/v3/actions/secrets/#example-encrypting-a-secret-using-python
 
