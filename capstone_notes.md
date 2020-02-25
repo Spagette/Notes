@@ -20,6 +20,14 @@ TODO:
 	--IAM
 	---user: GitHubActions
 
+Lambda's with aws API Gateway:
+https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway.html
+
+
+
+
+
+
 encrypting github actions:
 	https://developer.github.com/v3/actions/secrets/#example-encrypting-a-secret-using-python
 
