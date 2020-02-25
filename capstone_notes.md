@@ -18,6 +18,7 @@ TODO:
 	-https://github.com/aws-actions/configure-aws-credentials -aws github action
 	-https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html -manage keys
 	--IAM
+	---user: GitHubActions
 
 encrypting github actions:
 	https://developer.github.com/v3/actions/secrets/#example-encrypting-a-secret-using-python
