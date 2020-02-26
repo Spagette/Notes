@@ -1,8 +1,16 @@
 -ended on:
 --putitng aws secret keys into github secrets
--up next:
 --write POC lamdba source code
 --do manual deploy of lambda terraform
+---https://learn.hashicorp.com/terraform/aws/lambda-api-gateway (with API gateway) (one lambda that routes its own requests, not the API gateway)
+-up next:
+--API gateway testing
+---https://ggyh7bttje.execute-api.us-east-1.amazonaws.com/test
+---INTERNAL SERVER ERROR
+----article: https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-vpc-connections/
+----probs not helpful but n'oats https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-call-api.html
+
+
 --do a github actions deployment of lambda
 
 TODO:
@@ -20,14 +28,16 @@ TODO:
 	--IAM
 	---user: GitHubActions
 
+---AWS---
+keyid:  AKIAX3TTKWQT5FJGIZW3
+key: fLKS/5OUE4yiV8u0RyiQpj1gcs9pSc+2yFUlOIho
+
+
+---LAMBDA---
 Lambda's with aws API Gateway:
 https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway.html
 
-
-
-
-
-
+---GITHUB---
 encrypting github actions:
 	https://developer.github.com/v3/actions/secrets/#example-encrypting-a-secret-using-python
 
@@ -37,3 +47,17 @@ Secrets API
 
 -Get the secrets in a repo:
 --https://api.github.com/repos/spagette/parkourmod/actions/secrets
+
+
+---deployment overview---
+1. zip source code into zip file (lambda_src.zip)
+	-in runner use: zip "zippedFileName" "file/folder to be zipped"
+	-on local use: 7z a -tzip "zippedFileName" "file/folder to be zipped"
+2. copy source zip to s3
+	-used: aws s3 cp lambda_src.zip s3://chat-app-lambda-src/source-code/lambda_src.zip
+3. terraform init
+4. terraform plan -out <plan file> 
+5. terraform apply <plan file>
+	-plan file is used to garantee matching plan and apply(deploy)
+
+
