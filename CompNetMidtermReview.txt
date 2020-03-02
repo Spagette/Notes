@@ -12,3 +12,11 @@ Different protocols of IP (tcp, smtp...)
 C=2B bps
 C=2B log2(M) bps
 SNRdb = 10 log10(signal Power/noise Power)
+
+practice scientific calculator
+**remember log2 to log 10 conversion
+
+t/f
+multiple choice
+???
+problems to solve with calc
