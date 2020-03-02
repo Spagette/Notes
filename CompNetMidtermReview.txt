@@ -3,3 +3,9 @@ DNS
 packet constructions (layers)
 Know TCP/IP 5 layer model (use slides)
 Different protocols of IP (tcp, smtp...)
+-ftp
+-telnet
+-smtp
+-dns
+-tftp
+-snmp
