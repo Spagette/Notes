@@ -11,3 +11,4 @@ Different protocols of IP (tcp, smtp...)
 -snmp
 C=2B bps
 C=2B log2(M) bps
+SNRdb = 10 log10(signal Power/noise Power)
