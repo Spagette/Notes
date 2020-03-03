@@ -1,24 +1,11 @@
--ended on:
---putitng aws secret keys into github secrets
---write POC lamdba source code
---do manual deploy of lambda terraform
----https://learn.hashicorp.com/terraform/aws/lambda-api-gateway (with API gateway) (one lambda that routes its own requests, not the API gateway)
--up next:
---API gateway testing
----https://ggyh7bttje.execute-api.us-east-1.amazonaws.com/test
----INTERNAL SERVER ERROR
-----article: https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-vpc-connections/
-----probs not helpful but n'oats https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-call-api.html
-
-
---do a github actions deployment of lambda
-
 TODO:
 1. standup lambda terraform: https://www.terraform.io/docs/providers/aws/r/lambda_function.html
 	-lambda must be put into a package
 	--https://docs.aws.amazon.com/lambda/latest/dg/python-package.html
 
 2. standup lambda github action
+	-Running command line commands in a github runner
+	--use https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsrun
 	-do a manual deployment to help see the process
 	-figure out github actions
 
