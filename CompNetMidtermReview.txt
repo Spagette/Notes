@@ -3,18 +3,80 @@ DNS
 packet constructions (layers)
 Know TCP/IP 5 layer model (use slides)
 Different protocols of IP (tcp, smtp...)
--ftp
--telnet
--smtp
--dns
--tftp
--snmp
+
 C=2B bps
 C=2B log2(M) bps
 SNRdb = 10 log10(signal Power/noise Power)
 
-practice scientific calculator
-**remember log2 to log 10 conversion
+Chapter 1:
+LAN vs WAN
+
+Chapter 2:
+TCP/IP
+-internet-based protocol
+-Layers
+--Application
+--Transportation
+--Internet
+--Network Access
+--Physical
+
+OSI
+-Open System Interconnection
+
+Common ports
+--ftp 21
+--telnet 23
+--smtp 25
+--dns 53
+--tftp 69
+--snmp 161
+
+Chapter 3:
+Simplex
+-one way
+Half Duplex
+-one way OR other
+Full Duplex
+-both ways
+
+Signals
+-Peak Amplitude
+-Fequency
+--T = 1/f
+-Phase
+sine wave
+s(t) = A sin(2*pi*f*t+phase)
+With velocity v
+wavelength = v*T
+
+Spectrum range of freqs
+Bandwidth width of spectrum
+
+Digital signals suffer from attenuation
+
+Thermal Noise
+K = constant = 1.38*10^-23
+T = temp in kelvins
+B = Bandwidth in Hz
+Ndb = 10log10(K) + 10log10(T) + 10log10(B)\
+
+log2(x) = log10(x)/log10(2)
+
+Nyquist Bandwith
+-binary
+--C = 2B bps
+-multilevel signaling
+--C = 2B log2(M) bps
+B = Bandwidth
+
+Shannon Capacity Formula
+SNRdb = 10log10(signal Power/noise Power)
+C = B log2(1+SNR)
+B = Bandwidth
+
+Decibel
+Gdb = 10log10(Pout/Pin)
 
 t/f
 multiple choice
