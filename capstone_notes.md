@@ -1,6 +1,6 @@
 TODO:
 1. standup lambda terraform: https://www.terraform.io/docs/providers/aws/r/lambda_function.html
-	-lambda must be put into a package
+	-lambda must be put into a lambda package
 	--https://docs.aws.amazon.com/lambda/latest/dg/python-package.html
 
 2. standup lambda github action
